@@ -10,6 +10,13 @@ import webbrowser
 import json
 import random
 
+# Charger les paramètres à partir du fichier config.json
+def load_config():
+    with open('config.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+config = load_config()
+
 # Initialisation des modules
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -18,8 +25,8 @@ pygame.mixer.init()
 # Définir la locale sur le français
 locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
 
-# Définir le dossier pour les musiques
-music_directory = r"C:\Users\Maxime\Music"  # Chemin vers votre dossier de musique
+# Définir le dossier pour les musiques à partir du fichier de config
+music_directory = config.get("music_directory", r"C:\Users\Maxime\Music")
 tracks = [os.path.join(music_directory, f) for f in os.listdir(music_directory) if f.endswith('.mp3')]
 
 # Variable de contrôle pour arrêter l'écoute
@@ -47,13 +54,13 @@ def listen():
             return "Erreur dans la reconnaissance vocale"
 
 def get_weather(city):
-    api_key = "03f749839352867c0a4e5e09c76d15ad"
+    api_key = config.get("openweather_api_key")
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=fr"
     response = requests.get(url)
     data = response.json()
 
     if data.get("cod") != 200:
-        return f"Je ne trouve pas la météo pour cette ville désolé."
+        return "Je ne trouve pas la météo pour cette ville désolé."
     
     weather = data["weather"][0]["description"]
     temp = data["main"]["temp"]
@@ -75,7 +82,7 @@ def search_internet(query):
     return f"Recherche pour {query}."
 
 def get_news():
-    api_key = "e3bac4bd47e94102afc2e5be29628305"
+    api_key = config.get("newsapi_key")
     url = f"https://newsapi.org/v2/top-headlines?country=fr&apiKey={api_key}&language=fr"
     response = requests.get(url)
     data = response.json()
