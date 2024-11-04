@@ -1,0 +1,60 @@
+{
+    "Gratin de pommes de terre": {
+        "ingredients": ["pommes de terre", "crème fraîche", "fromage râpé", "ail", "beurre", "sel", "poivre"],
+        "prep_time": "1 heure",
+        "preparation_steps": [
+            "Préchauffer le four à 180°C.",
+            "Éplucher et couper les pommes de terre en fines rondelles.",
+            "Frotter le fond d'un plat à gratin avec une gousse d'ail coupée en deux.",
+            "Beurrer le plat, puis disposer les rondelles de pommes de terre en couches.",
+            "Saler, poivrer, et verser la crème fraîche sur les pommes de terre.",
+            "Parsemer de fromage râpé, puis enfourner pendant environ 45 minutes jusqu'à ce que le gratin soit doré."
+        ]
+    },
+    "Soupe de légumes": {
+        "ingredients": ["carottes", "pommes de terre", "poireau", "courgette", "oignon", "bouillon de légumes", "sel", "poivre"],
+        "prep_time": "45 minutes",
+        "preparation_steps": [
+            "Éplucher et couper les légumes en morceaux.",
+            "Faire revenir l'oignon dans une grande casserole avec un peu d'huile.",
+            "Ajouter les légumes et le bouillon, puis porter à ébullition.",
+            "Laisser mijoter pendant environ 30 minutes, jusqu'à ce que les légumes soient tendres.",
+            "Mixer la soupe jusqu'à obtenir une texture lisse et assaisonner selon le goût."
+        ]
+    },
+    "Quiche Lorraine": {
+        "ingredients": ["pâte brisée", "lardons", "oeufs", "crème fraîche", "fromage râpé", "sel", "poivre", "muscade"],
+        "prep_time": "45 minutes",
+        "preparation_steps": [
+            "Préchauffer le four à 180°C.",
+            "Foncer un moule à tarte avec la pâte brisée.",
+            "Faire revenir les lardons dans une poêle jusqu'à ce qu'ils soient dorés.",
+            "Dans un bol, battre les œufs avec la crème fraîche, le sel, le poivre et une pincée de muscade.",
+            "Répartir les lardons sur la pâte, puis verser le mélange d'œufs par-dessus.",
+            "Parsemer de fromage râpé, puis enfourner pour 30 à 35 minutes."
+        ]
+    },
+    "Riz cantonais": {
+        "ingredients": ["riz", "petits pois", "carottes", "oignons", "jambon", "oeufs", "sauce soja", "huile"],
+        "prep_time": "30 minutes",
+        "preparation_steps": [
+            "Cuire le riz et le laisser refroidir.",
+            "Faire revenir les oignons, les petits pois et les carottes coupées en petits dés dans une poêle avec un peu d'huile.",
+            "Ajouter le riz refroidi et faire sauter le tout.",
+            "Battre les œufs, les cuire en omelette, puis les couper en petits morceaux.",
+            "Ajouter l'omelette et le jambon coupé en dés dans la poêle avec le riz.",
+            "Assaisonner avec de la sauce soja et servir chaud."
+        ]
+    },
+    "Gâteau au yaourt": {
+        "ingredients": ["yaourt nature", "sucre", "farine", "huile", "œufs", "levure", "zeste de citron"],
+        "prep_time": "40 minutes",
+        "preparation_steps": [
+            "Préchauffer le four à 180°C.",
+            "Dans un bol, mélanger le yaourt, le sucre, et les œufs.",
+            "Ajouter la farine et la levure, puis l'huile et le zeste de citron.",
+            "Verser la pâte dans un moule beurré et fariné.",
+            "Enfourner pendant environ 30 minutes, jusqu'à ce que le gâteau soit doré et bien cuit."
+        ]
+    }
+}
